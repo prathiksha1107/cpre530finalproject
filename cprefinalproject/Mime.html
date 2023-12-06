@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>CyberNeighborhood</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+
+  <header class="navigation fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="attacks.html">Attacks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="knowledgecheck.html">Knowledge Check</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- page title -->
+  <section class="page-title bg-primary position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="text-white font-tertiary">Mime Attack</h1>
+        </div>
+      </div>
+    </div>
+    <!-- background shapes -->
+    <img src="images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+    <img src="images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
+    <img src="images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3">
+    <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
+    <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
+    <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
+    <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
+  </section>
+  <!-- /page title -->
+
+  <section class="section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="font-tertiary mb-5">What is a Mime Attack?</h3>
+          <p class="font-secondary" style="font-size: 125%">Mime attack in the application layer can be well
+            understood by comparing the analogy to a fruit basket with fake chocolate fruit:</p>
+          <div class="content">
+            <img src="images/blog/Illutrations-21.png" style="max-width: 42%;" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+            <strong style="line-height: 2;padding-top: 5%;">Imagine you're organizing a fruit basket for a healthy eating
+              event. You specify that only fruits should be included in the basket. Based on this, everyone starts
+              adding various fruits like apples, bananas, and oranges. However, someone mischievously decides to slip in
+              a chocolate bar, cleverly wrapped in an orange peel.
+              <br>
+              At first glance, the chocolate bar looks just like an orange and gets added to the fruit basket. But when
+              someone picks it up, expecting a fruit, they find a chocolate bar instead. This unexpected discovery is
+              both surprising and against the rules of the fruit basket.</strong>
+          </div>
+
+        </div>
+        <div class="row ">
+          <div class="content col-lg-12" style="margin-top:-12%;margin-bottom: -10%;">
+            <img src="images/blog/Illutrations-23.png" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+          </div>
+          <div class="content col-lg-12 text-center" style="margin-top:-7%;margin-bottom: 5%;font-size: 125%;">
+            <p>
+              <strong>
+                In this scenario:
+              </strong>
+            <ul class="font-secondary">
+              <li>The <span class="highlight1">fruit basket</span> represents a computer system or a web application.
+              </li>
+              <li>The <span class="highlight1">different types of fruits</span> symbolize legitimate data or files.
+              </li>
+              <li>The <span class="highlight1">chocolate in an orange peel</span> represents a malicious script or file
+                disguised as something harmless (like a safe image or document file).</li>
+              <li><span class="highlight1">Adding the disguised chocolate to the basket</span> fMirrors a MIME type
+                attack where harmful content is masked as something benign to bypass security filters.</li>
+
+            </ul>
+            </p>
+
+          </div>
+
+          <div class="content col-lg-12 position-relative">
+            <blockquote>Just as a chocolate bar hidden in an orange peel disrupts the integrity of a fruit basket, a
+              <span class="highlight">MIME type attack</span>,
+              deceives a system by masking malicious content with a benign file type. This breach can lead to
+              unauthorized access and execution of scripts, disrupting the system's operations and compromising
+              security, akin to the unexpected bite into a disguised treat.</blockquote>
+            <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <section class="mitigation-section">
+    <div class="container">
+      <h2 class="section-title">Mitigation Strategies for MIME Type Attacks</h2>
+      <p class="intro-text">To safeguard against MIME type attacks, it's essential to implement stringent mitigation
+        strategies. Consider these approaches to bolster your system's defenses against deceptive file types.</p>
+  
+      <div id="mitigation-strategies" class="mitigation-container">
+        <div class="strategy" tabindex="0">
+          <h4>Validate File Content <span class="icon">🔎</span></h4>
+          <p class="description">Inspect the actual content of files to ensure they match their declared MIME types, preventing disguised malicious files from being processed.</p>
+        </div>
+        <div class="strategy" tabindex="0">
+          <h4>Secure File Handling <span class="icon">🔐</span></h4>
+          <p class="description">Establish secure practices for handling and executing files, including segregating uploaded files from executable file directories.</p>
+        </div>
+        <div class="strategy" tabindex="0">
+          <h4>Implement Content Security Policy (CSP) <span class="icon">⚙️</span></h4>
+          <p class="description">Use CSP headers to control the types of resources that user agents are allowed to load, minimizing the risk of script execution from unknown sources.</p>
+        </div>
+        <div class="strategy" tabindex="0">
+          <h4>Update and Patch Systems <span class="icon">🛡️</span></h4>
+          <p class="description">Keep all systems up-to-date with the latest security patches to mitigate known vulnerabilities that could be exploited via MIME type deception.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="bg-dark footer-section">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="text-light">Email</h5>
+            <p class="text-white paragraph-lg font-secondary">prathik@iastate.edu | eranda@iastate.edu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-top text-center border-dark py-5">
+      <p class="mb-0 text-light">Copyright &copy;
+        <script>
+          var CurrentYear = new Date().getFullYear()
+          document.write(CurrentYear)
+        </script> Developed by <a class="text-white-50">Prathiksha & Eranda</a>
+      </p>
+    </div>
+  </footer>
+  <!-- /footer -->
+
+  <!-- jQuery -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- filter -->
+  <script src="plugins/shuffle/shuffle.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

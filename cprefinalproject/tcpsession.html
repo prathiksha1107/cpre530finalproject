@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>CyberNeighborhood</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+
+  <header class="navigation fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <!-- <li class="nav-item">
+        <a class="nav-link" href="about.html">about</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="attacks.html">Attacks</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- page title -->
+  <section class="page-title bg-primary position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="text-white font-tertiary">TCP Session Hicjacking Attack</h1>
+        </div>
+      </div>
+    </div>
+    <!-- background shapes -->
+    <img src="images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+    <img src="images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
+    <img src="images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3">
+    <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
+    <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
+    <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
+    <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
+  </section>
+  <!-- /page title -->
+
+  <section class="section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="font-tertiary mb-5">What is a TCP Session Hijacking Attack?</h3>
+          <p class="font-secondary" style="font-size: 125%">TCP Session Hijacking attack in the Transport Layer can be
+            well understood
+            with the the analogy of a movie theatre ticket.</p>
+          <div class="content">
+            <img style="width: 50%" src="images/blog/Illutrations-28.png" alt="post-thumb"
+              class="img-fluid rounded float-left mr-5 mb-4">
+            <strong style="line-height: 2;">Imagine you're at a concert with a ticket that guarantees you a specific
+              seat. You go to the concession stand, and when you return, someone else is in your seat. They've somehow
+              created a fake ticket with your seat number on it. The usher, who didn't see the switch happen, believes
+              the interloper belongs in your seat because they have a ticket that looks legitimate. Meanwhile, you're
+              left without a place to sit, and the intruder enjoys the show in your stead.</strong>
+          </div>
+
+        </div>
+        <div class="row ">
+          <div class="content col-lg-12" style="margin-bottom: 5%;">
+            <img src="images/blog/Illutrations-29.png" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+          </div>
+          <div class="content col-lg-12 text-justify" style="margin-top:-5%;margin-bottom: 5%;font-size: 125%;">
+            <p>
+              <strong>
+                In this scenario:
+              </strong>
+            <ul style="list-style: disc;line-height: 1.5;" class="font-secondary">
+              <li>The <span class="highlight1">concert seat</span> Represents the established session between a client
+                (you) and a server (the event).
+              </li>
+              <li>The <span class="highlight1">ticket </span>symbolizes the session token or identifier that validates
+                the client's access to the server.</li>
+              <li>The <span class="highlight1">concession stand trip</span> is akin to a moment of vulnerability when
+                the session can be compromised.</li>
+              <li>The <span class="highlight1">fake ticket holder</span> is the attacker who hijacks your session.</li>
+            </ul>
+            </p>
+
+          </div>
+
+          <div class="content col-lg-12 position-relative">
+            <blockquote>This mirrors TCP Session Hijacking, where an attacker takes over a web session by stealing or
+              forging the session token, and the server, like the usher, cannot distinguish between the legitimate user
+              and the attacker. The attacker then continues the session, possibly gaining access to sensitive
+              information or privileges intended for the legitimate user.
+            </blockquote>
+            <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <section class="session-hijacking-mitigation-section">
+    <div class="container">
+      <h2 class="section-title">TCP Session Hijacking Mitigation Strategies</h2>
+      <p class="intro-text">TCP Session Hijacking poses significant security threats. Implement these strategies to protect your sessions from being compromised.</p>
+
+      <div id="session-hijacking-mitigation-strategies" class="mitigation-container">
+        <div class="strategy" tabindex="0">
+          <h4>Use Secure Cookies <span class="icon">🔒</span></h4>
+          <p class="description">Employ secure, HTTP-only cookies for session management to prevent attackers from easily accessing them via scripts.</p>
+        </div>
+        <div class="strategy" tabindex="0">
+          <h4>Implement SSL/TLS <span class="icon">🔐</span></h4>
+          <p class="description">Use SSL/TLS encryption for all data transmission to protect the session data from being intercepted or tampered with.</p>
+        </div>
+        <div class="strategy" tabindex="0">
+          <h4>Session Timeout <span class="icon">⏰</span></h4>
+          <p class="description">Set a session timeout limit to automatically end sessions after a period of inactivity, reducing the window of opportunity for hijacking.</p>
+        </div>
+        <div class="strategy" tabindex="0">
+          <h4>Monitor Session Activities <span class="icon">👀</span></h4>
+          <p class="description">Regularly monitor session activities for unusual patterns or anomalies that could indicate a session hijacking attempt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- footer -->
+  <footer class="bg-dark footer-section">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="text-light">Email</h5>
+            <p class="text-white paragraph-lg font-secondary">prathik@iastate.edu | eranda@iastate.edu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-top text-center border-dark py-5">
+      <p class="mb-0 text-light">Copyright &copy;
+        <script>
+          var CurrentYear = new Date().getFullYear()
+          document.write(CurrentYear)
+        </script> Developed by <a class="text-white-50">Prathiksha & Eranda</a>
+      </p>
+    </div>
+  </footer>
+  <!-- /footer -->
+  <!-- jQuery -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- filter -->
+  <script src="plugins/shuffle/shuffle.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

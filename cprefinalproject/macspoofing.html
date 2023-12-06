@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>cyberNeighborhood</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+
+  <header class="navigation fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <!-- <li class="nav-item">
+        <a class="nav-link" href="about.html">about</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="attacks.html">Attacks</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- page title -->
+  <section class="page-title bg-primary position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="text-white font-tertiary">MAC Spoofing Attack</h1>
+        </div>
+      </div>
+    </div>
+    <!-- background shapes -->
+    <img src="images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+    <img src="images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
+    <img src="images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3">
+    <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
+    <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
+    <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
+    <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
+  </section>
+  <!-- /page title -->
+
+  <section class="section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="font-tertiary mb-5">What is a MAC Spoofing Attack?</h3>
+          <p class="font-secondary" style="font-size: 125%">Impersonation with a fake ID in a controlled-access building
+            can also be adapted to explain a MAC spoofing attack at the Physical Layer of a network:</p>
+          <div class="content">
+            <img src="images/blog/image-15.png" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+            <strong style="line-height: 2;padding-top: 5%;">Imagine a theater hall with a seating capacity of 100 people
+              Imagine a high-security office building where access is controlled through ID cards. Each employee has a
+              unique ID card with a specific number, which they use to swipe through security gates. The security system
+              relies on these ID numbers to verify who is entering or leaving the building, granting access based on the
+              legitimacy of the ID presented.
+              <br>
+              <br>
+              Now, envision a scenario where someone, intending to gain unauthorized access, creates a counterfeit ID
+              card. This fake ID replicates the number of a legitimate employee’s card. When this person uses the
+              counterfeit ID at the security gate, the system checks the ID number, recognizes it as valid (although
+              it's a duplicate), and grants access. To the system, it appears as if the legitimate employee is entering,
+              but in reality, it's an imposter.
+            </strong>
+          </div>
+
+        </div>
+        <div class="row ">
+          <div class="content col-lg-12"  >
+            <img style="width: 80%;padding-left: 25%;" src="images/blog/image-16.png" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+          </div>
+          <div class="content col-lg-12 text-center" style="margin-bottom: 5%;font-size: 125%;">
+            <p>
+              <strong>
+                In this scenario:
+              </strong>
+            <ul class="font-secondary">
+              <li>The <span class="highlight1">high-security office building</span> represents a network.</li>
+              <li>The <span class="highlight1">unique ID cards</span> used by employees are akin to MAC (Media Access
+                Control) addresses of network devices.
+              </li>
+              <li>The <span class="highlight1">security system at the gate</span> symbolizes the network's access
+                control mechanism.</li>
+              <li>The <span class="highlight1">counterfeit ID card with a duplicated number</span> represents a spoofed
+                MAC address.</li>
+            </ul>
+            </p>
+
+          </div>
+
+          <div class="content col-lg-12 position-relative">
+            <blockquote>Just like the imposter in the building uses a fake ID to gain unauthorized access, in a MAC
+              spoofing attack, an attacker alters the MAC address of their network interface to pose as a legitimate
+              device on the network. This can allow them to bypass security filters, impersonate other devices, or evade
+              tracking and monitoring, potentially leading to unauthorized network access or other malicious activities.
+            </blockquote>
+            <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <section class="mac-spoofing-section">
+    <div class="container">
+        <h2 class="section-title">MAC Spoofing Mitigation Strategies</h2>
+        <p class="intro-text">MAC spoofing poses a threat to network security. Below are strategies to prevent unauthorized access and ensure network integrity.</p>
+
+        <div id="mac-spoofing-strategies" class="spoofing-container">
+            <div class="strategy" tabindex="0">
+                <h4>Secure Network Ports <span class="icon">🔐</span></h4>
+                <p class="description">Limit the number of devices that can connect to a network port and make sure only known devices can connect.</p>
+            </div>
+            <div class="strategy" tabindex="0">
+                <h4>Inspect Data Traffic <span class="icon">🔍</span></h4>
+                <p class="description">Check the data traffic to ensure the device’s identity matches its network address.</p>
+            </div>
+            <div class="strategy" tabindex="0">
+                <h4>Use Safe Communication Methods <span class="icon">🛡️</span></h4>
+                <p class="description">Use secure ways of sending data that can't easily be hijacked, even if someone is pretending to be another device.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- footer -->
+  <footer class="bg-dark footer-section">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="text-light">Email</h5>
+            <p class="text-white paragraph-lg font-secondary">prathik@iastate.edu | eranda@iastate.edu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-top text-center border-dark py-5">
+      <p class="mb-0 text-light">Copyright &copy;
+        <script>
+          var CurrentYear = new Date().getFullYear()
+          document.write(CurrentYear)
+        </script> Developed by <a class="text-white-50">Prathiksha & Eranda</a>
+      </p>
+    </div>
+  </footer>
+  <!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/shuffle/shuffle.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

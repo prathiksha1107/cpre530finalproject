@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>CyberNeighborhood</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+
+  <header class="navigation fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <!-- <li class="nav-item">
+        <a class="nav-link" href="about.html">about</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="attacks.html">Attacks</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- page title -->
+  <section class="page-title bg-primary position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="text-white font-tertiary">IP Spoofing Attack</h1>
+        </div>
+      </div>
+    </div>
+    <!-- background shapes -->
+    <img src="images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+    <img src="images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
+    <img src="images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3">
+    <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
+    <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
+    <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
+    <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
+  </section>
+  <!-- /page title -->
+
+  <section class="section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="font-tertiary mb-5">What is a IP Spoofing Attack?</h3>
+          <p class="font-secondary" style="font-size: 125%">IP spoofing attack in the Internet Layer can be likened to a
+            case of deceptive identity at a mail delivery system:</p>
+          <div class="content">
+            <img style="width: 50%" src="images/blog/image-12.png" alt="post-thumb"
+              class="img-fluid rounded float-left mr-5 mb-4">
+            <strong style="line-height: 2;">Imagine a mail delivery system where packages are sent and received based on
+              address labels. In this system, senders are required to accurately label their packages with their own
+              return address and the recipient’s address. This ensures that if a package cannot be delivered, it returns
+              to the correct sender.
+              <br>
+              <br>
+              Now, picture a scenario where someone decides to cause confusion or hide their identity. This person sends
+              out packages with misleading information: while the recipient's address is correct, the sender's return
+              address is falsified, belonging to someone else entirely. If the recipients try to respond to or return
+              these packages, their responses will be directed to the wrong, unsuspecting individual whose address was
+              used falsely.</strong>
+          </div>
+
+        </div>
+        <div class="row ">
+          <div class="content col-lg-12" style="margin-bottom: 5%;">
+            <img src="images/blog/image-13.png" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+          </div>
+          <div class="content col-lg-12 text-justify" style="margin-top:-7%;margin-bottom: 5%;font-size: 125%;">
+            <p>
+              <strong>
+                In this scenario:
+              </strong>
+            <ul style="list-style: disc;line-height: 1.5;" class="font-secondary">
+              <li>The <span class="highlight1">mail delivery system</span> represents the Transport Layer of a
+                network.
+              </li>
+              <li>The <span class="highlight1">accurate return address</span> on a package is like the source IP
+                address in a packet header.</li>
+              <li>Each <span class="highlight1">fake reservation call</span> symbolizes a malicious SYN packet sent
+                during a SYN Flood attack.</li>
+              <li>The <span class="highlight1">falsified return address</span> symbolizes the spoofed IP address used
+                in an IP spoofing attack.</li>
+              <li>The <span class="highlight1">unsuspecting individual </span> whose address was falsely used is
+                analogous to a third-party system or user who becomes an unwitting participant in the communication
+                without their knowledge.</li>
+            </ul>
+            </p>
+
+          </div>
+
+          <div class="content col-lg-12 position-relative">
+            <blockquote>Like the deceptive individual in the mail system who misleads the recipients and the mail
+              service, an attacker in an IP spoofing attack disguises the origin of network packets by altering the
+              source IP address. This can be used to bypass security measures, impersonate other systems, or orchestrate
+              a larger scale attack, such as a Distributed Denial of Service (DDoS), where the responses or backscatter
+              traffic are directed to the spoofed address, causing disruption or masking the attacker's true location.
+            </blockquote>
+            <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <section class="ip-spoofing-section">
+    <div class="container">
+      <h2 class="section-title">IP Spoofing Mitigation Strategies</h2>
+      <p class="intro-text">IP spoofing can pose serious security risks. Implement these strategies to protect your
+        network from such attacks.</p>
+
+      <div id="ip-spoofing-strategies" class="spoofing-container">
+        <div class="strategy" tabindex="0">
+          <h4>Filtering Fake Data <span class="icon">🚫</span></h4>
+          <p class="description">Set up filters to block data packets that look like they’re coming from the wrong
+            place.</p>
+        </div>
+        <div class="strategy" tabindex="0">
+          <h4>Check Incoming and Outgoing Traffic <span class="icon">🔍</span></h4>
+          <p class="description">Keep an eye on data coming in and going out to make sure it’s coming from and going to
+            the right places.</p>
+        </div>
+        <div class="strategy" tabindex="0">
+          <h4>Confirm Who’s Sending Data <span class="icon">✅</span></h4>
+          <p class="description">Use systems that check and confirm the identity of the data sender.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- footer -->
+  <footer class="bg-dark footer-section">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="text-light">Email</h5>
+            <p class="text-white paragraph-lg font-secondary">prathik@iastate.edu | eranda@iastate.edu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-top text-center border-dark py-5">
+      <p class="mb-0 text-light">Copyright &copy;
+        <script>
+          var CurrentYear = new Date().getFullYear()
+          document.write(CurrentYear)
+        </script> Developed by <a class="text-white-50">Prathiksha & Eranda</a>
+      </p>
+    </div>
+  </footer>
+  <!-- /footer -->
+  <!-- jQuery -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- filter -->
+  <script src="plugins/shuffle/shuffle.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

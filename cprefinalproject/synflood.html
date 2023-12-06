@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>CyberNeighborhood</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+
+  <header class="navigation fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <!-- <li class="nav-item">
+        <a class="nav-link" href="about.html">about</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="attacks.html">Attacks</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- page title -->
+  <section class="page-title bg-primary position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="text-white font-tertiary">SYN Flood Attack</h1>
+        </div>
+      </div>
+    </div>
+    <!-- background shapes -->
+    <img src="images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+    <img src="images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
+    <img src="images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3">
+    <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
+    <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
+    <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
+    <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
+  </section>
+  <!-- /page title -->
+
+  <section class="section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="font-tertiary mb-5">What is a SYN Flood Attack?</h3>
+          <p class="font-secondary" style="font-size: 125%">SYN Flood attack in the Transport Layer can be compared to
+            an overwhelmed restaurant reservation system:</p>
+          <div class="content">
+            <img style="width: 50%" src="images/blog/image-09.png" alt="post-thumb"
+              class="img-fluid rounded float-left mr-5 mb-4">
+            <strong style="line-height: 2;">Imagine a popular restaurant that operates on a
+              reservation-only basis. Customers call the restaurant to book a table, and each reservation request is
+              answered by a host. The host notes down the customer's name and assigns a table, expecting the customer to
+              arrive at a specified time. This process is generally smooth and efficient.
+              <br>
+              <br>
+              However, one day, a group decides to disrupt the restaurant's operation. They start making numerous fake
+              reservation calls, each time providing a different name and then not showing up. The host, following
+              protocol, allocates tables for these fake reservations. As a result, the restaurant appears to be fully
+              booked, with many tables reserved and kept empty, awaiting guests that will never arrive.</strong>
+          </div>
+
+        </div>
+        <div class="row ">
+          <div class="content col-lg-12" style="margin-bottom: 5%;">
+            <img style="padding-left: 8%;" src="images/blog/image-10.png" alt="post-thumb"
+              class="img-fluid rounded float-left mr-5 mb-4">
+          </div>
+          <div class="content col-lg-12 text-justify" style="margin-top:-7%;margin-bottom: 5%;font-size: 125%;">
+            <p>
+              <strong>
+                In this scenario:
+              </strong>
+            <ul style="list-style: disc;" class="font-secondary">
+              <ul style="list-style: disc;" class="font-secondary">
+                <li>The <span class="highlight1">restaurant's reservation system</span> represents the Transport Layer
+                  of
+                  a network, particularly the process that handles incoming connection requests (SYN requests in
+                  TCP/IP).
+                </li>
+                <li>The <span class="highlight1">host</span> is akin to the server managing incoming SYN requests.</li>
+                <li>Each <span class="highlight1">fake reservation call</span> symbolizes a malicious SYN packet sent
+                  during a SYN Flood attack.</li>
+                <li>The <span class="highlight1">unavailability of tables for actual customers</span> due to fake
+                  reservations is similar to legitimate users being unable to establish connections because the server
+                  is
+                  overwhelmed with false requests.</li>
+                <li><span class="highlight1">Guests occupying aisles and emergency exits</span> symbolize the overflow
+                  of
+                  data into adjacent memory areas.</li>
+              </ul>
+              </p>
+
+          </div>
+
+          <div class="content col-lg-12 position-relative">
+            <blockquote>Just as the restaurant's reservation system is overwhelmed and cannot accommodate real
+              customers, a SYN Flood attack inundates a server with a flood of SYN requests, leaving it unable to
+              process legitimate requests. This disrupts normal operations and can lead to a denial of service for
+              actual users trying to connect to the server.</blockquote>
+            <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+
+  <section class="syn-flood-section">
+    <div class="container">
+      <h2 class="section-title">SYN Flood Attack Mitigation Strategies</h2>
+      <p class="intro-text">To protect against SYN flood attacks, it's important to implement robust defense mechanisms.
+        Here are effective strategies for mitigating these types of attacks.</p>
+
+      <div id="syn-flood-strategies" class="flood-container">
+        <div class="strategy" tabindex="0">
+          <h4>Use Special Cookies <span class="icon">🍪</span></h4>
+          <p class="description">Use a special technique (SYN cookies) where the server doesn’t use up resources for
+            every connection request it gets.</p>
+        </div>
+        <div class="strategy" tabindex="0">
+          <h4>Handle More Requests <span class="icon">⚡</span></h4>
+          <p class="description">Increase the server's ability to handle lots of connection requests at once.</p>
+        </div>
+        <div class="strategy" tabindex="0">
+          <h4>Control the Flow of Requests <span class="icon">🚦</span></h4>
+          <p class="description">Put a limit on how many connection requests are handled in a certain amount of time to
+            prevent overload.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- footer -->
+  <footer class="bg-dark footer-section">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="text-light">Email</h5>
+            <p class="text-white paragraph-lg font-secondary">prathik@iastate.edu | eranda@iastate.edu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-top text-center border-dark py-5">
+      <p class="mb-0 text-light">Copyright &copy;
+        <script>
+          var CurrentYear = new Date().getFullYear()
+          document.write(CurrentYear)
+        </script> Developed by <a class="text-white-50">Prathiksha & Eranda</a>
+      </p>
+    </div>
+  </footer>
+  <!-- /footer -->
+
+  <!-- jQuery -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- filter -->
+  <script src="plugins/shuffle/shuffle.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
