@@ -30,4 +30,5 @@ To view these pages, you can clone this repository and open the HTML files in yo
 
 ## Contact
 
-For any additional questions or comments, please email prathik@iastate.edu & eranda@iastate.edu.
+For any additional questions or comments, please email Prathiksha Ravi Krishnan : prathik@iastate.edu 
+                                                       Eranda Sooriyarachchi : eranda@iastate.edu
